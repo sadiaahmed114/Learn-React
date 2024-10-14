@@ -1,11 +1,42 @@
-import Chai from "./App"
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-function App(){
-  return (
-  <><h1>React FrameWork 1</h1><Chai /></>
-)
+import App from './App.jsx'
+
+function MyApp(){
+    return (
+        <div>
+            <h1>Custom App | chai</h1>
+        </div>
+    )
 }
-createRoot(document.getElementById('root')).render(
-    <App /> 
-);
+
+// const ReactElement = {
+//     type: 'a',
+//     props: {
+//         href: 'https://google.com',
+//         target: '_blank'
+//     },
+//     children: 'Click me to visit google'
+// }
+
+const anotherElement = (
+    <a href="https://google.com" target='_blank'></a>
+)
+
+
+
+const anotherUser = "chai aur react"
+
+const reactElement = React.createElement(
+    'a',
+    {href: 'https://google.com',target: '_blank' },
+    'click me to visit google',
+    anotherElement
+)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+ 
+    reactElement
+  
+)
