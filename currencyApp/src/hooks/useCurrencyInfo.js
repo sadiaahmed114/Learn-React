@@ -1,4 +1,3 @@
-// useCurrencyInfo.js
 import { useState, useEffect } from "react";
 
 function useCurrencyInfo(currency) {
@@ -8,10 +7,10 @@ function useCurrencyInfo(currency) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/4d7aa9e69a77ecc856da5865/latest/${currency}`); // API URL
+        const response = await fetch(`https://v6.exchangerate-api.com/v6/4d7aa9e69a77ecc856da5865/latest/${currency}`); 
         const result = await response.json();
         if (result.conversion_rates) {
-          setData(result.conversion_rates); // Set conversion rates
+          setData(result.conversion_rates); 
         } else {
           setError("Invalid currency data received.");
         }
@@ -24,7 +23,7 @@ function useCurrencyInfo(currency) {
     fetchData();
   }, [currency]);
 
-  return { data, error }; // Return both data and error
+  return { data, error }; 
 }
 
 export default useCurrencyInfo;
