@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-    
+     <h1>Quranic Wisdom Hub</h1>
+     <h2>Bismillah hir rahman nir rahim</h2>
     </>
   )
 }
