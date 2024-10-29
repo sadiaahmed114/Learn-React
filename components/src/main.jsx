@@ -26,14 +26,17 @@ function Post(Props){
           <SlOptions />
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?
+            {Props.text}
           </p>
-          <img
+          {
+          Props.postImage ? <img
             src={Props.postImage}
+            // {/* <video src={Props.postImage} height={400} width={400} muted autoPlay controls loop></video> */}
             alt="car"
             className="post-photo"
             id="my-id"
-          />
+          /> : null 
+        }
 
 
           <div className='icons'>
@@ -45,18 +48,19 @@ function Post(Props){
   )
 }
 
+
 function App(){
   return(
     <div style={{display:"flex" , gap:"20px" , flexDirection:"column"}}>
-    <Post name="Mirha"  postImage={car1}  profilePhoto="https://i.imgur.com/yXOvdOSs.jpg"/>
-    <Post name="Ayan"   postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
-    <Post name="Shaheer" postImage={car1}   profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
-    <Post name="Awan"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
+    <Post name="Mirha"  postImage={car1}  profilePhoto="https://i.imgur.com/yXOvdOSs.jpg" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
+    <Post name="Ayan"   profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
+    <Post name="Shaheer" postImage={car1}   profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
+    <Post name="Awan"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
     <Post name="Shehzad"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
     <Post name="Ammar"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
-    <Post name="Zain"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
-    <Post name="Alayar"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
-    <Post name="Asima"  postImage={car1}  profilePhoto="https://i.imgur.com/yXOvdOSs.jpg"/>
+    <Post name="Zain"   profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
+    <Post name="Alayar"  postImage={car1} text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
+    <Post name="Asima"  postImage={car1}  profilePhoto="https://i.imgur.com/yXOvdOSs.jpg" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ducimus incidunt qui dignissimos impedit ea corrupti! Recusandae, deleniti. Error, illum?"/>
     <Post name="Bilal"  postImage={car1}  profilePhoto="https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg"/>
     {/* <SlOptions /> */}
     {/* <div className='post-container'>
