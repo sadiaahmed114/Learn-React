@@ -150,3 +150,8 @@ function App() {
 
 export default App;
 
+// Hooks:
+// hooks name start with use 
+// you can only call Hooks at the top of your components
+
+
