@@ -59,18 +59,18 @@
 
 // const postData = [
 //   {
-//     name: "shehzad",
+//     name: "sssss",
 //     // postImage: fruitImage,
 //     profilePhoto:
 //       "https://heroshotphotography.com/wp-content/uploads/2023/03/male-linkedin-corporate-headshot-on-white-square-1024x1024.jpg",
 //   },
 //   {
-//     name: "shahab",
+//     name: "aaaaaaaaaa",
 //     postImage: car1,
 //     profilePhoto: "https://i.imgur.com/yXOvdOSs.jpg",
 //   },
 //   {
-//     name: "sufyan",
+//     name: "shhhhhhhhhhh",
 //     postImage: car1,
 //     profilePhoto: "https://i.imgur.com/yXOvdOSs.jpg",
 //   },
